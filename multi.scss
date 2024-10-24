@@ -1,0 +1,37 @@
+@import '_multi.scss';
+
+$precolor:red;
+$seccolor:blue;
+$prsize:10px;
+
+
+@mixin sub(){
+
+    color: green;
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 10px;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#main{
+    h1{
+        color:$precolor;
+        @include sub();
+    }
+    p{
+        color: $seccolor;
+        font-size: $prsize + $prsize;
+        @include sub();
+        span{
+            color: blue;
+        }
+    }
+
+}

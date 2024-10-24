@@ -1,0 +1,410 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* topheader css starts from here  */
+
+#topheader{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    /* padding-top: 15px; */
+    align-items: center;
+    font-weight: lighter;
+
+}
+
+#topheader div i{
+    color: rgb(206, 206, 20);
+    margin-left: 5px;
+}
+
+/* navabar */
+
+#navbar{
+    position: fixed;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+#navbar nav{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 10px; */
+
+}
+
+#navbar nav ul{
+
+    display: flex;
+    /* /* margin-left: 60%; */
+    gap: 20px; 
+   list-style: none;
+} 
+
+#navbar nav ul  li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+#navbar nav p{
+    color: white;
+    font-weight:700;
+    font-size: 30px;
+}
+
+#navbar nav ul li{
+    padding: 20px;
+}
+
+#navbar nav ul li:hover{
+    background-color: black;
+    cursor: grab;
+    
+}
+
+#navbar nav ul li:hover a{
+
+    color: red;
+}
+
+
+/*=================== home section ======================= */
+
+
+#home{
+    background-image: url(./images/hero-bg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+#home .hometext{
+
+    width: 50%;
+    padding-top: 20%;
+    padding-left: 5% ;
+    transition: transform 0.1s ease;
+}
+
+#home .hometext h1{
+ 
+    font-size: 40px;
+
+
+}
+
+#home .hometext h1 span{
+    color: rgb(245, 221, 9);
+}
+
+
+#home .hometext .btn1{
+
+    /* padding: 20px; */
+    width: 150px;
+    height: 50px;
+    font-weight: bolder;
+
+}
+
+#home .hometext .btn1:hover{
+
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+
+}
+
+#home .hometext .btn2{
+    width: 150px;
+    height: 50px;
+}
+/*=================== about code ================== */
+
+#about{
+    width: 100%;
+    margin-top: 75px;
+    
+}
+
+#about .abouttext{
+
+   display: flex;
+   justify-content: center;
+
+}
+
+#about .abouttext .aboutimg{
+    width: 500px;
+}
+#about .abouttext .aboutcontent{
+    width: 500px;
+    height: 250px;
+    border: 1px solid white;
+    padding: 20px;
+    line-height: 30px;
+    margin-top: 50px;
+    margin-left: -50px ;
+    background-color: white;
+}
+
+
+#about .abouttext .aboutcontent h1{
+
+    font-size: 2.5rem;
+    word-spacing: 10px;
+}
+
+
+.img1{
+    animation: blink 5s infinite;
+
+}
+
+@keyframes blink{
+
+    0%{
+        opacity: 1;
+    }
+
+    25%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    75%{
+        opacity: 0;
+    }
+
+    100%{
+
+        opacity: 1;
+    }
+
+}
+
+
+/* =========== our service css code============  */
+
+
+#service{
+
+    width: 100%;
+    height: 400px;
+    background-color: black;
+}
+
+#service h1{
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#service .serbox .box1{
+
+
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    text-align: center;
+    /* padding-top: 30px; */
+    
+
+}
+
+
+#service .serbox{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+
+}
+
+#service .serbox .box1 i{
+    padding-top: 20px;
+    font-size: 40px;
+}
+
+#service .serbox .box1 h2{
+    margin-top: 10px;
+}
+
+#service .serbox .box1 p{
+    margin-top: 10px;
+}
+
+#service .serbox .box1 button{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f1db25;
+    color: white;
+    border: 1px solid #f1db25;
+
+}
+
+
+#service .serbox .box1 button:hover{
+
+    background-color: white;
+    color: #f1db25;
+
+}
+
+
+#service span{
+    border-bottom: 5px solid #f1db25;
+    color: red;
+}
+
+
+
+ /* backgrounf immage  */
+
+ #back {
+
+    width: 100%;
+    height: 150vh;
+    border: 1px solid black;
+  
+ }
+
+ #back .cont{
+  
+ display: grid;
+ justify-content: center;
+ grid-template-columns: repeat(auto-fill,300px);
+ 
+   
+
+ }
+
+ #back .cont .box3{
+
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+
+ }
+
+ input{
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    width: 500px;
+ }
+
+ #checklist{
+    width: 100%;
+    height: 100vh;
+ }
+
+#checklist .textshown{
+     
+    width: 80%;
+    height: 60px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: blanchedalmond;
+    margin-left: 10%;
+}
+
+#checklist .textshown span{
+    font-size: 30px;
+    float: right;
+    margin-top: -15px;
+}
+#check{
+    display: none;
+}
+
+.showtext{
+    display: none;
+}
+#check:checked~.showtext{
+    display: block;
+}
+
+
+
+#scrollbar{
+
+     width: 100%;
+     height: auto;
+     display: grid;
+     grid-template-columns: repeat(10,500px);
+     overflow-x: scroll;
+     scrollbar-width: none;
+
+}
+
+#scrollbar div{
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+
+ /* mobile css  */
+
+ /* @media (max-width:450px){
+
+    #back .cont{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+ } */
+#bars{
+    display: none;
+}
+
+
+ @media (max-width:450px){
+
+
+      #topheader div span{
+        display: none;
+      }
+
+      input{
+        width: 100%;
+      }
+
+      #navbar nav ul{
+        display: none;
+      }
+
+      .lab{
+         position: absolute;
+         top: 10%;
+         right: 5%;
+         z-index: 999;
+      }
+
+      #bars:checked~#navbar nav ul{
+        display: block;
+        position: absolute;
+        top: 5%;
+        left: 40%;
+        background-color: rgba(0,255,0);
+      }
+
+      #bars:checked~main #home .hometext{
+        transform: translateY(200px);
+      }
+
+ }

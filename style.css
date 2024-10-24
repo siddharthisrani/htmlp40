@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#navbar{
+    background-color: aqua;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+#navbar nav{
+   display: flex;
+   justify-content: space-between;
+ 
+}
+
+#navbar nav ul{
+    display: flex;
+    list-style-type:none;
+    gap: 20px;
+}
+
+#navbar nav img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#navbar nav ul li a{
+    text-decoration: none;
+    color: rgba(0, 82, 48);
+    /* border: 1px solid black; */
+}
+
+#navbar nav ul li a:hover{
+    color: chocolate;
+    font-size: 30px;
+    /* background-color: blueviolet; */
+    border-bottom: 2px solid black;
+}
+
+#navbar nav button{
+
+    border-color: brown;
+    background-color: yellowgreen;
+    padding: 10px;
+}
+
+#navbar nav button:hover{
+    border-color: black;
+    background-color: black;
+    color: white;
+}
+
+#navbar nav ul li i{
+    color: brown;
+    font-size: 20px;
+    margin:10px;
+}
+
+/* navbar css ends here  */
+
+#home{
+    width: 100%;
+    height: 500px;
+    /* border: 1px solid black; */
+    background-image: url(./images/babyfolder/babypic.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#home div{
+    width: 50%;
+    padding-top: 50px;
+}
+
+#home div p{
+    font-family: "Sixtyfour Convergence", sans-serif;
+}
+
+/* About csss starting  */
+
+#about{
+    width: 100%;
+    height: 100vh;
+  background-color:blanchedalmond;
+}
+
+#learn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#learn .image{
+    width: 50%;
+   
+}
+
+#learn .image img{
+    width: 100%;
+}
+
+#learn .text{
+    width: 50%;
+    position: absolute;
+    /* left:100px ; */
+}
+
